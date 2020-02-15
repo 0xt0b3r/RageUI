@@ -14,7 +14,7 @@
 ---@param IsLooped boolean
 ---@return nil
 ---@public
-function PlaySound(Library, Sound, IsLooped,  Audio)
+function PlaySoundDont(Library, Sound, IsLooped,  Audio) --Rename function as its replacing native... 
 
     if not IsLooped then
         PlaySoundFrontend(-1, Sound, Library, true)
